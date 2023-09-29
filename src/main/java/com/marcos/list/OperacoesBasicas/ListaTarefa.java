@@ -38,4 +38,19 @@ public class ListaTarefa {
             System.out.println("Tarefa: " + tarefa.getDescricao());
         }
     }
+
+    public static void main (String[] args) {
+        System.out.println("Exercício 1: ");
+        ListaTarefa listaDeTarefas = new ListaTarefa();
+
+        listaDeTarefas.adicionarTarefa("Lavar o carro.");
+        listaDeTarefas.adicionarTarefa("Sair com a Isa.");
+        listaDeTarefas.adicionarTarefa("Comprar flores.");
+        listaDeTarefas.adicionarTarefa("Enviar currículo.");
+
+        listaDeTarefas.removerTarefa("Lavar o carro.");
+
+        listaDeTarefas.obterDescricoesTarefas();
+        System.out.println("Total de Tarefas: " + listaDeTarefas.obterNumeroTotalTarefas());
+    }
 }
